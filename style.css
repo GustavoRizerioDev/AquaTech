@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000000;
+}
+
+.header{   
+    border-bottom: 3px solid #32B9CD;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.titulo{
+    color: #32B9CD;
+    font-weight: 500;
+}
+
+.navbar{
+    width: 400px;
+    display: flex;
+    color: #E3B062;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Caso eu queira reutilizar a classe .container
+o estilo justify-content não se aplica, apenas se aplica para
+o container dentro do header */
+.header .container{
+    justify-content: space-between;
+}
