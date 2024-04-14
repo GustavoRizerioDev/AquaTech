@@ -2,11 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #000000;
 }
 
 .header {
-    border-bottom: 3px solid #32B9CD;
+    border-bottom: .1875rem solid #32B9CD;
+    background-color: #000000;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-    width: 400px;
+    width: 25rem;
     display: flex;
     color: #E3B062;
     list-style: none;
@@ -38,7 +38,7 @@ o container dentro do header */
 
 .banner {
     width: 100%;
-    height: 500px;
+    height: 31.25rem;
     background-image: url(img/bg-jelly-fish-para_outras_pags.png);
     display: flex;
 }
@@ -46,7 +46,7 @@ o container dentro do header */
 .banner__titulo{
     margin: 0;
     color: white;
-    font-size: 35px;
+    font-size: 2.1875rem;
 }
 
 .banner .container{
@@ -69,8 +69,8 @@ o container dentro do header */
 }
 
 .card img{
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     padding-top: 5%;
 }
 
@@ -85,7 +85,7 @@ o container dentro do header */
 
 .footer{
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     background-color: #32b9cd;
     text-align: center;
     color: white;
@@ -94,4 +94,73 @@ o container dentro do header */
 
 .footer p {
     margin: 0;
+}
+
+/* Cadastro */
+
+.principal{
+    background-image: url(img/bg-jelly-fish-para_outras_pags.png);
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container__cadastro {
+    display: flex;
+    max-width: 800px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 15px 48px 33px -62px rgb(255, 255, 255);
+    background-color: #ffffff;
+}
+
+.image {
+    flex: 1;
+    background-image: url('img/aguaViva.jpg');
+    background-size: cover;
+}
+
+.image__login {
+    flex: 1;
+    background-image: url('img/AguavivaLogin.jpg');
+    background-size: cover;
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #19118a;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a10a2;
 }
